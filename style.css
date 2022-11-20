@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+:root {
+  --bg-color: #eee;
+  --border-color: #aaa;
+  --body-color: #fff;
+  --font-color: #333;
+}
+
+.dark-theme {
+  --bg-color: #273340;
+  --border-color: rgb(66, 83, 100);
+  --body-color: #15202b;
+  --font-color: #fff;
+}
+
+header nav i {
+  cursor: pointer;
+  color: var(--font-color);
+  transition: color 0.5s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  background-color: var(--body-color);
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.container {
+  position: relative;
+}
+
+header {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem;
+  transition: all 0.5s ease;
+}
+
+header nav h2 {
+  letter-spacing: 5px;
+}
+
+main {
+  color: var(--font-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: all 0.5s ease;
+}
+
+main article {
+  text-align: center;
+  padding: 1rem;
+}
+
+main article p {
+  margin: 0.3rem 0;
+}
+
+main article p a {
+  color: var(--font-color);
+  text-decoration: none;
+  border-bottom: solid 1px var(--border-color);
+  transition: all 0.5s ease;
+}
+
+main article p a:hover {
+  color: var(--border-color);
+}
+
+main article p span {
+  font-size: 0.9rem;
+  color: var(--border-color);
+  transition: all 0.5s ease;
+}
+
+main article ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.7rem;
+  list-style-type: none;
+}
+
+main article ul li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--font-color);
+  transition: all 0.5s ease;
+}
+
+main article ul li:hover a {
+  color: var(--border-color);
+}
+
+.newsletter a {
+  color: var(--font-color);
+  text-decoration: none;
+  display: block;
+  padding: 0.2rem;
+  transition: all 0.5s ease;
+}
+
+.newsletter a:hover {
+  color: var(--border-color);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+footer nav {
+  padding: 0.5rem;
+  border-top: 1px solid var(--border-color);
+  transition: all 0.5s ease;
+}
